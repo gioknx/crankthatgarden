@@ -5,8 +5,8 @@ angular.module('starter.controllers', [])
 				age: 18},
 				{name: "Delisson", 
 				age: 98}];
-	projects[0].tasks = [{name: "cut grass", duration : "5hs"}, {name: "do sheeps", duration : "17hs"}];
-	projects[1].tasks = [{name: "get recked", duration : "18hs"}, {name: "do nails", duration : "2hs"}];
+	projects[0].tasks = [{name: "dip bow", duration : "5hs"}, {name: "do bar", duration : "17hs"}];
+	projects[1].tasks = [{name: "get foo", duration : "18hs"}, {name: "do nails", duration : "2hs"}];
 
 	
 
