@@ -1,0 +1,15 @@
+<ion-view view-title="Chats">
+  <ion-content>
+    <p> Please enter here your partner's email so you can share your projects and tasks.</p>
+    <P> If you have more than one partner, please enter their e-mails below separeted by commmas.</p>
+
+    <label class="item item-input">
+    <textarea placeholder="Emails" ng-model="invite.emails"></textarea>
+  </label>
+
+
+  <button class="button button-block button-balanced" ng-click="submitInvitation(invite.emails)">Invite</button>
+
+
+  </ion-content>
+</ion-view>

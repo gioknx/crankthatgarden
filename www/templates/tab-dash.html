@@ -1,0 +1,28 @@
+<ion-view view-title="Projetos">
+<ion-nav-bar class="bar-stable nav-title-slide-ios7">
+
+    <ion-nav-buttons side="left">
+        <button class="button button-clear button-positive" ng-click="createEntry()">
+            Add Task
+        </button>
+    </ion-nav-buttons>
+</ion-nav-bar>
+
+
+  <ion-content class="padding">
+    <div class="list card item item-body" ng-repeat="p in projects" ng-show="p.tasks.length != 0" ng-click="showConfirmFinishProject()">
+      <div class="item item-divider">{{p.name}}</div>
+        <div class="item item-body" ng-click="showConfirmFinish()" ng-repeat="t in p.tasks">
+          <div>
+            <i ng-click="showConfirmFinish()"><span class="ion-android-checkbox-outline" ></span></i>
+            <i ng-click="showConfirmDelete()"><span class="ion-trash-a" ></span></i>
+
+
+            <h3>Nome:</h3> {{t.name}} <br>
+            <h3>Duração:</h3> {{t.duration}}
+
+          </div>
+        </div>
+      </div>
+  </ion-content>
+</ion-view>

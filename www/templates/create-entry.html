@@ -1,0 +1,30 @@
+<ion-view view-title="Criar tarefa">
+
+  <ion-content>
+     
+     <div class="list">
+
+  <div class="item item-input item-select">
+    <div class="input-label">
+      Projeto
+    </div>
+    <select name="repeatSelect" id="repeatSelect"  ng-model="selected_project" 
+>
+      <option ng-repeat="project in projects" value="{{project.name}}">{{project.name}}</option>
+    </select>
+  </div>
+</div> 
+
+      <label class="item item-input">
+        <span class="input-label">Tarefa</span>
+        <input type="text">
+      </label>
+
+
+      <button class="button button-block button-balanced" ng-click="submitEntry()">Criar</button>
+      <button class="button button-block button-assertive" ng-click="cancelCreateEntry()">Cancelar</button>
+
+
+
+</ion-content>
+</ion-view>
